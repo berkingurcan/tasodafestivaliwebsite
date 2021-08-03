@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script>
+		if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	   		window.location.href = 'mobile.html';
+		}
+	</script>
+	<meta charset="utf-8">
+	<title>Taşoda Festivali</title>
+	<meta name="description" content="Boğaziçi Üniversitesi Taşoda Festivali">
+	<link rel="stylesheet" href="style.css">
+	<meta keywords="bümk, boğaziçi taşoda, taşoda, taşoda festivali, konser, boğaziçi müzik, boğaziçi jazz">
+	<meta author="Berkin Gürcan">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@100;300&display=swap" rel="stylesheet"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="icon" href="icon.svg">
+
+</head>
+<body>
+
+
+	<script>
+		$(document).ready(function(){
+			$("#header").hide().fadeIn(2000);
+		});
+
+		$(document).ready(function(){
+			$(".banner").hide().fadeIn(3000);
+		});
+
+		$(document).ready(function(){
+			$("#demo").hide().fadeIn(3000);
+		});
+	</script>
+
+	<main>
+		<div id = "header" class="box-header">
+
+			<div id="logo" class="logo">
+				<h1 id="logos">TAŞODA FESTİVALİ</h1>
+			</div>
+
+			<div class="menu">
+    			<a href="iletisim.html">İletişim</a>
+    			<a href="hakkimizda.html">Geçmiş Yıllar</a>
+    			<a href="index.html">Anasayfa</a>
+			</div>
+
+		</div>
+
+		<div class="banner">
+
+			<h1>Türkiye'nin en büyük bağımsız müzik festivali olan Taşoda Festivali 3 gün 3 gece boyunca 27-28-29 Ağustos tarihlerinde Boğaziçi Üniversitesi Güney Meydan'da ve Alternatif Çimler'de!</h1>
+
+			<h1 id="demo"></h1>
+
+		</div>
+	</main>
+
+
+
+
+<script type="text/javascript">
+	var countDownDate = new Date("Aug 27, 2021 18:37:25").getTime();
+
+// Update the count down every 1 second
+	var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+  + minutes + "M " + seconds + "S ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 0);
+</script>
+
+</body>
+</html>
